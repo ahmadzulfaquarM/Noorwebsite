@@ -1,0 +1,280 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    background-image: linear-gradient(0deg, white, white);
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar */
+.navContainer {
+    padding: 15px;
+    width: 100%;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navLogo {
+    color: whitesmoke;
+    font-size: 2.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+#navList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    #navList {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Hero Section */
+.contentBox {
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+    padding: 50px 20px;
+}
+
+.leftBox img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+.rightBox {
+    max-width: 600px;
+}
+
+.rightBox h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+.highlight {
+    color: blue;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+.resume-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rightBox h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* About Section */
+.Biography {
+    width: 100%;
+    background-color: white;
+    padding: 50px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.left {
+    width: 60%;
+    padding: 20px;
+}
+
+.right {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
+
+/* Skills Section */
+.skills {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 3rem;
+    color: black;
+    text-align: left;
+}
+
+.skills div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 20px;
+}
+
+.content1, .content2, .content3 {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .content1, .content2, .content3 {
+        width: 100%;
+    }
+}
+
+/* Projects Section */
+.project {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.project > div {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 30%;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .project > div {
+        width: 100%;
+    }
+}
+
+/* Contact Section */
+.contact {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footerBox {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    text-align: center;
+    padding: 20px;
+}
+
+.footerBox a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .footerBox {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerBox a {
+        display: block;
+        margin: 5px 0;
+    }
+}
